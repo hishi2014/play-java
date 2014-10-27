@@ -1,0 +1,27 @@
+@(product : models.Product)
+
+@main("Welcome to Play") {
+
+<h1>Product</h1>
+
+@if(product!=null) {
+<legend>製品一覧</legend>
+<table>
+    <thead>
+    <tr>
+        <th>製品ID</th>
+        <th>製品名</th>
+        <th>値段</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>@product.id</td>
+        <td>@product.name</td>
+        <td>@product.price</td>
+    </tr>
+    </tbody>
+</table>
+}
+}
