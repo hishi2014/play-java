@@ -4,9 +4,10 @@
 
 <h1>Product</h1>
 <form action="@routes.ProductController.update()" method="post">
+    <legend>製品</legend>
     <input type="hidden" name="id" value="@product.id" />
-    <input type="text" name="name" value="@product.name"/>
-    <input type="text" name="price" value="@product.price"/>
+    <p>名前：<input type="text" name="name" value="@product.name"/></p>
+    <p>値段：<input type="text" name="price" value="@product.price"/></p>
     <button>Edit Product</button>
 </form>
 
